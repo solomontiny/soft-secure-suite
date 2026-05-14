@@ -22,7 +22,7 @@ export const Route = createFileRoute("/quote")({
 function QuotePage() {
   const [submitted, setSubmitted] = useState(false);
   const [form, setForm] = useState({
-    name: "", email: "", phone: "", product: PRODUCTS[0].slug,
+    name: "", email: "", phone: "", product: PRODUCTS[0].slug as string,
     sumInsured: "", details: "",
   });
 
