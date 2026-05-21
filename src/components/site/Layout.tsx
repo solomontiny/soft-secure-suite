@@ -1,6 +1,6 @@
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
-import { WhatsAppFab } from "./WhatsAppFab";
+import { ChatWidget } from "./ChatWidget";
 
 export function SiteLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -8,7 +8,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
       <Navbar />
       <main className="flex-1 pt-24">{children}</main>
       <Footer />
-      <WhatsAppFab />
+      <ChatWidget />
     </div>
   );
 }
