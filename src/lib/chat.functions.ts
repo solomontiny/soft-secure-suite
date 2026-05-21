@@ -46,15 +46,14 @@ async function runAssistant(conversationId: string) {
     content: clean,
   });
 
-  const patch: Record<string, unknown> = {
-    last_message_at: new Date().toISOString(),
-    last_message_preview: clean.slice(0, 140),
-  };
-  if (escalate) {
-    patch.status = "escalated";
-    patch.ai_mode = false;
-  }
-  await supabaseAdmin.from("conversations").update(patch).eq("id", conversationId);
+  await supabaseAdmin
+    .from("conversations")
+    .update({
+      last_message_at: new Date().toISOString(),
+      last_message_preview: clean.slice(0, 140),
+      ...(escalate ? { status: "escalated", ai_mode: false } : {}),
+    })
+    .eq("id", conversationId);
   return { text: clean, escalated: escalate };
 }
 
