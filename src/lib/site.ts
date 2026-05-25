@@ -3,11 +3,10 @@ export const SITE = {
   short: "Naingate",
   tagline: "Africa's pro-active, digital-led insurance broker.",
   email: "info@naingateinsurancebrokers.com",
-  whatsapp: "+2348000000000",
+  whatsapp: "+2348023164341",
+  phone: "+234 802 316 4341",
   addresses: [
-    { city: "Lagos", line: "26 Sumbo Jibowu Street, Ikoyi, Lagos." },
-    { city: "Ibadan", line: "42 Kenneth Dike Way, Opp Peter & Paul Seminary, Bodija, Ibadan." },
-    { city: "Abuja", line: "9 Tema Street, Off Rabat Street, Wuse Zone 6, Abuja." },
+    { city: "Lagos (Head Office)", line: "1, Olorunfunmi Street, Off Association Avenue, Ilupeju, Lagos, Nigeria." },
   ],
 };
 
@@ -24,12 +23,12 @@ export const PRODUCTS = [
   { slug: "motor", name: "Motor Insurance", icon: "Car",
     short: "Comprehensive cover for private and commercial vehicles.",
     full: "Compensation for accidents, vandalism, fire, theft and bodily damage. Covers private saloons, jeeps, trucks and heavy duty vehicles, with third-party liability up to ₦60m." },
-  { slug: "engineering", name: "Engineering Insurance", icon: "HardHat",
-    short: "Protection for plant, machinery and electronic equipment.",
-    full: "Plant All Risk (PAR), Contractors All Risks (CAR), Electronic Equipment and Machinery Breakdown policies for projects in extreme working conditions." },
   { slug: "property", name: "Property Insurance", icon: "Building2",
     short: "Fire, special perils, burglary and all-risk for valuables.",
     full: "Fire and allied perils, burglary, accidental damage, legal liability towards the public, and all-risk cover for selected valuable items." },
+  { slug: "engineering", name: "Engineering Insurance", icon: "HardHat",
+    short: "Protection for plant, machinery and electronic equipment.",
+    full: "Plant All Risk (PAR), Contractors All Risks (CAR), Electronic Equipment and Machinery Breakdown policies for projects in extreme working conditions." },
   { slug: "special-risk", name: "Special Risk Insurance", icon: "ShieldAlert",
     short: "Marine, aviation and bond cover for complex exposures.",
     full: "Marine cargo and hull, aviation tailored to aircraft operations, and bonds for contractual and statutory obligations." },
@@ -89,3 +88,33 @@ export const FAQ = [
   { q: "Can I get a tailored corporate package?", a: "Absolutely. We design bespoke risk programmes for corporates, government and SMEs after a free risk audit." },
   { q: "Do you cover individuals or only businesses?", a: "Both. From motor and travel for individuals to large corporate engineering and special-risk programmes." },
 ];
+
+export const SPONSORSHIP = {
+  title: "Sponsorship Proposal for Live Recording",
+  beneficiary: "The Living Sacrifice Choir, RCCG General Assembly",
+  date: "18 July, 2026",
+  letterDate: "12 April, 2026",
+  vision:
+    "A vision-driven project aimed at creating a spirit-filled and impactful worship experience — reaching and uplifting souls through music, in alignment with Vision 2032.",
+  budget: "₦7,000,000 (Seven Million Naira only)",
+  coverage: [
+    "Professional audio and video recordings",
+    "Studio setup",
+    "Music promotion",
+    "Event logistics and organisation",
+  ],
+  contacts: [
+    { name: "Min. Damilola", phone: "+234 813 779 6415" },
+    { name: "Sis. Osibanjo Olamide", role: "Choir Director" },
+  ],
+  account: {
+    name: "Osibanjo Olamide",
+    number: "0172507771",
+    bank: "GT Bank",
+  },
+  signatories: [
+    { name: "Sis. Osibanjo Olamide", role: "Choir Music Director" },
+    { name: "Pst. Olatona Oluwafunmmilayo", role: "Minister in Charge / WAPICP CSR" },
+  ],
+  zone: "Zone 7, LP1",
+};
