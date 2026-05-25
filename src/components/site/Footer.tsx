@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
 import { Logo } from "./Logo";
 import { NAV, SITE } from "@/lib/site";
 
@@ -46,6 +46,9 @@ export function Footer() {
           <div className="text-white text-sm font-semibold mb-4">Contact</div>
           <a href={`mailto:${SITE.email}`} className="flex items-start gap-2 text-sm hover:text-gold">
             <Mail className="h-4 w-4 text-gold mt-0.5" /> {SITE.email}
+          </a>
+          <a href={`tel:${SITE.phone.replace(/\s/g, "")}`} className="mt-2 flex items-start gap-2 text-sm hover:text-gold">
+            <Phone className="h-4 w-4 text-gold mt-0.5" /> {SITE.phone}
           </a>
           <Link to="/contact" className="mt-5 inline-flex rounded-full bg-gradient-gold text-navy font-semibold text-sm px-4 py-2.5">
             Request a quote
