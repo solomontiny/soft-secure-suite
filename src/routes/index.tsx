@@ -68,9 +68,9 @@ function HomePage() {
             </motion.div>
             <motion.h1
               initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }}
-              className="mt-5 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] tracking-tight">
-              Insurance,<br />
-              <span className="italic font-display text-gold">re-imagined</span> for Africa.
+              className="mt-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-tight">
+              Insurance and risk management
+              <span className="block text-gold font-normal mt-2">trusted across Nigeria.</span>
             </motion.h1>
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.2 }}
               className="mt-6 text-lg text-white/75 max-w-xl leading-relaxed">
